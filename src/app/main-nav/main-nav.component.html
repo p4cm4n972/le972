@@ -1,0 +1,93 @@
+<header class="h-100">
+    <mdb-navbar SideClass="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar intro-fixed-nav"
+        [containerInside]="false">
+        <mdb-navbar-brand>
+            <a class="logo navbar-brand" href="#">
+                <strong>
+                    <mdb-icon far icon="hand-peace"></mdb-icon>
+                </strong>
+            </a>
+        </mdb-navbar-brand>
+        <links>
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active waves-light" mdbWavesEffect>
+                    <a mdbBtn title="Inscription" floating="true" size="sm" gradient="peach" mdbWavesEffect
+                        [routerLink]="['/sign']" routerLinkActive="router-link-active">
+                        <mdb-icon fas icon="user-plus"></mdb-icon>
+                    </a>
+                </li>
+                <li class="nav-item active waves-light" mdbWavesEffect>
+                    <a mdbBtn title="Connexion" floating="true" size="sm" gradient="aqua" mdbWavesEffect
+                        [routerLink]="['/login']" routerLinkActive="router-link-active">
+                        <mdb-icon fas icon="sign-in-alt"></mdb-icon>
+                    </a>
+                </li>
+                <!-- BOUTONS SUPPLEMENTAIRES A DEFINIR (au besoin) -->
+                <!-- <li class="nav-item waves-light" mdbWavesEffect>
+            <a mdbBtn floating="true" size="sm" gradient="purple" mdbWavesEffect>
+              <mdb-icon icon="bolt"></mdb-icon>
+            </a>
+          </li>
+          <li class="nav-item waves-light" mdbWavesEffect>
+            <a mdbBtn floating="true" size="sm" gradient="purple" mdbWavesEffect>
+              <mdb-icon icon="bolt"></mdb-icon>
+            </a>
+          </li> -->
+            </ul>
+            <ul class="nav justify-content-end ">
+                <li class="nav-item">
+                    <!--Facebook-->
+                    <a type="button" mdbBtn floating="true" size="sm" color="fb" class="waves-light" mdbWavesEffect>
+                        <mdb-icon fab icon="facebook-f"></mdb-icon>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <!--Twitter-->
+                    <a type="button" mdbBtn floating="true" size="sm" color="tw" class="waves-light" mdbWavesEffect>
+                        <mdb-icon fab icon="twitter"></mdb-icon>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <!--Instagram-->
+                    <a type="button" mdbBtn floating="true" size="sm" color="ins" class="  waves-light" mdbWavesEffect>
+                        <mdb-icon fab icon="instagram"></mdb-icon>
+                    </a>
+
+                </li>
+                <li class="nav-item">
+                    <!--Youtube-->
+                    <a type="button" mdbBtn floating="true" size="sm" color="yt" class="  waves-light" mdbWavesEffect>
+                        <mdb-icon fab icon="youtube"></mdb-icon>
+                    </a>
+
+                </li>
+            </ul>
+        </links>
+
+    </mdb-navbar>
+    <!-- Main -->
+    <div class="view intro-2">
+        <div class="full-bg-img">
+            <div class="mask flex-center">
+                <div class="container text-center white-text wow fadeInUp">
+                    <h2>374 780 petites annonces</h2>
+                    <br>
+                    <h1>Les petites annonces du 972</h1>
+                    <h3>Voitures, motos, immobiliers, multimédia, maison ...</h3>
+                    <br>
+                    <p>
+                        <mdb-icon fas *ngFor="let icon of iconsList" icon="{{icon}}"></mdb-icon>
+                    </p>
+                    <button mdbBtn type="button" gradient="peach" rounded="true" class="waves-light"
+                        mdbWavesEffect>Petites
+                        annonces</button>
+                    <button mdbBtn type="button" gradient="blue" rounded="true" class="waves-light"
+                        mdbWavesEffect>Déposer
+                        annonce</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.Main -->
+</header>
+<!--Main Navigation-->

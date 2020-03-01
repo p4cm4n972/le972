@@ -1,0 +1,27 @@
+.view {
+    background: url("../../assets/img/background.jpg")no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.navbar {
+    background-color: transparent;
+}
+
+.top-nav-collapse {
+    background-color: #4285F4;
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar {
+        background-color: #4285F4;
+    }
+}
+
+p > mdb-icon {
+    padding: 10px;
+}
+mdb-carousel {
+    margin-top: 50px;
+    margin-top: 50px;
+}
